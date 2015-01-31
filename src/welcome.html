@@ -1,0 +1,14 @@
+<template>
+  <section>
+    <h2>${heading}</h2>
+    <div class="routine-list">
+         <ul class="list-group">
+           <li repeat.for="routine of routines" class="list-group-item">
+             <a href="#" click.delegate="$parent.showRoutine()">
+               <p class="list-group-item-text">${routine}</p>
+             </a>
+           </li>
+         </ul>
+       </div>
+  </section>
+</template>
